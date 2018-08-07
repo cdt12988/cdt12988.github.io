@@ -4,13 +4,13 @@
 
 GitHub Link: [https://github.com/cdt12988/Word-Guess-Game/](https://github.com/cdt12988/Word-Guess-Game/)
 
-Game:[https://cdt12988.github.io/Word-Guess-Game/](https://cdt12988.github.io/Word-Guess-Game/)
+Game: [https://cdt12988.github.io/Word-Guess-Game/](https://cdt12988.github.io/Word-Guess-Game/)
 
 ## gifTV
 
 GitHub Link: [https://github.com/cdt12988/gifTV/](https://github.com/cdt12988/gifTV/)
 
-App:[https://cdt12988.github.io/gifTV/](https://cdt12988.github.io/gifTV/)
+App: [https://cdt12988.github.io/gifTV/](https://cdt12988.github.io/gifTV/)
 
 ## Rock Paper Scissors - Multiplayer
 
