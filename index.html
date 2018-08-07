@@ -1,9 +1,1581 @@
 <html>
-	<head>
-		<title>Test Page</title>
-	</head>
-	<body>
-		<p>Hello World!</p>
-	</body>
+<head>
+<link rel="shortcut icon" href="images/ct.png" type="image/x-icon">
+<link rel="icon" href="/images/ct.png" type="image/x-icon">
+<link rel="stylesheet" href="normalize.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700|IM+Fell+English+SC|Kalam|Permanent+Marker" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<style>
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	font-family: 'Encode Sans Condensed', sans-serif;
+	line-height: 1.6;
+/* 	background: #EFA690; */
+/* 	background: #F7D5BE; */
+/* 	background-image: linear-gradient(to right top, #efa690, #f1b29a, #f3bea5, #f5cab1, #f7d5be); */
+/* 	background: #1D2434; */
+	background-image: radial-gradient(circle, #15151c, #181922, #1a1c28, #1c202e, #1d2434);
+/* 	background-image: linear-gradient(to right, #15151c, #181922, #1a1c28, #1c202e, #1d2434); */
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.header {
+	position: fixed;
+	height: 10vh;
+	width: 100vw;
+	max-width 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: start;
+	color: aliceblue;
+	font-family: 'Permanent Marker', cursive;
 	
+//	background: rgba(0, 0, 0, 0.25);
+//	padding: 2.5%;
+	
+}
+/*
+.header h1,
+.header h1 a {
+	width: 100%;
+}
+*/
+.initials {
+	position: relative;
+	display: inline-block;
+	padding: 2.5vw;
+//	padding-top: 5vw;
+	width: auto;
+//	transition: opacity 1s ease-in;
+//	z-index: 1;
+
+	//text-shadow: 2px 2px 20px firebrick;
+}
+.initials:hover {
+	text-shadow: 2px 2px 20px firebrick;
+	//text-shadow: none;
+}
+.name {
+	position: fixed;
+	top: 0.5%;
+	//left: auto;
+	font-size: 2em;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+//	transition: font-size 500ms;
+
+//	transition: all 0.5s linear;
+
+	padding-left: 2.5vw;
+	font-size: 1.5em;
+	font-size: 1em;
+
+	text-shadow: 2px 2px 20px firebrick;
+	display: inline-block;
+	width: auto;
+}
+.initials:after,
+.name:after,
+#roll a:after {
+	display: block;
+	content: '';
+	border-bottom: solid 5px aliceblue;
+	transform: scaleX(0);
+	transition: transform 300ms ease-in-out;
+	transform-origin: 100% 50%;
+}
+.initials:hover:after,
+.name:hover:after,
+#roll a:hover:after {
+	transform: scaleX(1);
+	transform-origin: 0 50%;
+}
+.name:hover {
+	text-shadow: none;
+}
+.name-slide {
+	animation-name: slideLeft;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+}
+.name-slide-right {
+	animation-name: nameSlideRight;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+}
+.initials-slide {
+	animation-name: slideRight;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+}
+.ini-slide-left {
+	animation-name: iniSlideLeft;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+}
+@keyframes slideLeft {
+	0% {
+		transform: translateX(0);
+		//font-size: 2em;
+//		font-size: 1.5em;
+		opacity: 1;
+	}
+	99% {
+		opacity: 1;
+
+	}
+	100% {
+		transform: translateX(-80vw);
+		//font-size: 1.5em;
+//		font-size: 1.25em;
+		opacity: 0;
+	}
+}
+@keyframes slideRight {
+	0% {
+		transform: translateX(-40vw);
+		//font-size: 1.5em;
+		//font-size: 1.25em;
+		opacity: 1;
+	}
+	50% {
+		transform: translateX(-40vw);
+		opacity: 1;
+	}
+	99% {
+		opacity: 1;
+
+	}
+	100% {
+		transform: translateX(0);
+		//font-size: 1em;
+		opacity: 1;
+	}
+}
+@keyframes nameSlideRight {
+	0% {
+		transform: translateX(-80vw);
+		//font-size: 1.5em;
+		//font-size: 1.25em;
+		opacity: 1;
+	}
+	50% {
+		transform: translateX(-80vw);
+		opacity: 1;
+	}
+	99% {
+		opacity: 1;
+
+	}
+	100% {
+		transform: translateX(0);
+		//font-size: 2em;
+		//font-size: 1.5em;
+		opacity: 1;
+	}
+}
+@keyframes iniSlideLeft {
+	0% {
+		transform: translateX(0);
+		//font-size: 1em;
+		opacity: 1;
+	}
+	50% {
+//		transform: translateX(-5vw);
+		opacity: 1;
+		//font-size: 1em;
+	}
+	99% {
+		opacity: 1;
+
+	}
+	100% {
+		transform: translateX(-40vw);
+		//font-size: 1.5em;
+		//font-size: 1.25em;
+		opacity: 0;
+	}
+}
+.hidden {
+	opacity: 0;
+	z-index: -1;
+}
+.home-container {
+	
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.home-bg {
+	background-image: url("https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631-1500x1000.jpg");
+	min-height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+.home-content-container {
+	width: 70%;
+	height: auto;
+	margin: auto;
+//	background: yellow;
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 50%;
+	padding: 2.5%;
+	
+}
+h2 {
+	font-family: 'IM Fell English SC', serif;
+	font-family: 'Permanent Marker', cursive;
+	font-family: 'Comfortaa', cursive;
+	
+	font-size: 3em;
+	font-size: 2.75em;
+	color: aliceblue;
+	text-shadow: 2px 2px 50px firebrick;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+nav h2 {
+	font-family: 'Permanent Marker', cursive;
+}
+.home-content {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+//	background: green;
+	margin-bottom: 5%;
+	font-size: 2em;
+//	color: navajowhite;
+	color: aliceblue;
+	text-shadow: 2px 2px 50px firebrick;
+}
+.about-bg {
+	width: 100%;
+/* 	background: aliceblue; */
+	margin: 0;
+	padding: 0;
+}
+.about-container {
+	width: 70%;
+	margin: 5% auto;
+	text-align: center;
+}
+.about-content {
+	font-size: 2em;
+	color: firebrick;
+	color: #F7D5BE;
+/* 	text-shadow: 2px 2px 50px firebrick; */
+}
+.button {
+	padding: 0.75em;
+	max-width: 200px;
+	background: firebrick;
+	color: aliceblue;
+	border-radius: 10px;
+	margin: 5% auto;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'IM Fell English SC', serif;
+	font-family: 'Permanent Marker', cursive;
+	font-family: 'Kalam', cursive;
+	font-weight: bold;
+	font-size: 1.1em;
+//	transition: all ease 0.5s;
+	opacity: 0.75;
+	opacity: 0.85;
+	
+//	display: inline-block;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.button:hover {
+//	box-shadow: inset 200px 0 0 0 midnightblue;
+}
+.button span {
+	display: inline-block;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	opacity: 0.75;
+	opacity: 1;
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+.button i {
+	font-size: 2.5em;
+	text-align: center;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	display: block;
+	position: absolute;
+	opacity: 0;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+.button:before {
+	content: '';
+	top: 0;
+	left: 50%;
+	right: 50%;
+	position: absolute;
+	height: 100%;
+	background: rgba(29, 36, 52, 0.75);
+	border-radius: 10px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+.button:hover span,
+.button.hover span {
+	opacity: 0;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+.button:hover i,
+.button.hover i {
+	opacity: 0.75;
+	opacity: 1;
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+/* Enables the Hover-Out Effect set up previously */
+.button:hover:before,
+.button.hover:before {
+	left: 0;
+	right: 0;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+button:active:before {
+ 	background: rgba(29, 36, 52, 1);
+}
+.link {
+	color: firebrick;
+	position: relative;
+	display: inline-block;
+}
+.link:after {
+	display: block;
+	content: '';
+	border-bottom: solid 3px firebrick;
+	transform: scaleX(0);
+	transition: transform 300ms ease-in-out;
+	transform-origin: 100% 50%;
+}
+.link:hover:after {
+	transform: scaleX(1);
+	transform-origin: 0 50%;
+}
+.link:hover {
+/* 	text-shadow: 2px 2px 20px firebrick; */
+}
+
+
+
+.menu-btn {
+	height: 100px;
+	width: 50px;
+	color: aliceblue;
+	background: firebrick;
+	opacity: 0.85;
+	font-size: 1.25em;
+	text-align: center;
+	line-height: 50%;
+
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 1em 0;
+	z-index: 2;
+	cursor: pointer;
+
+	transition: all 200ms linear;
+}
+.btn-menu-open {
+	right: 350px;
+	background: #1D2434;
+	
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 100px;
+	border-top-right-radius: 100px;
+}
+.menu-btn:hover {
+	background: #1D2434;
+}
+.btn-menu-open:hover {
+	background: #F7D5BE;
+	color: #1D2434;
+}
+.nav-collapse {
+	width: 0px;
+	height: 100vh;
+	position: fixed;
+	right: 0;
+	top: 0;
+	background: rgba(178, 34, 34, 0.85);
+//	background-image: linear-gradient(to left, #b22222, #b12626, #b02929, #ae2d2d, #ad3030);
+	background-image: linear-gradient(to right bottom, #b22222, #a72323, #9c2424, #922525, #872525);
+	background-image: linear-gradient(to right bottom, rgba(178, 34, 34, 0.65), rgba(167, 35, 35, 0.65), rgba(156, 36, 36, 0.65), rgba(146, 37, 37, 0.65), rgba(135, 37, 37, 0.65));
+
+	transition: all 200ms linear;
+	z-index: 1;
+	overflow: auto;
+}
+.menu-open {
+	width: 400px;
+}
+
+/*****************
+	NAV MENU
+******************/
+.nav-collapse ul {
+	display: block;
+	list-style-type: none;
+//	background: midnightblue;
+	width: 100%;
+	margin: 0 auto;
+//	padding: 1em;
+	padding: 0;
+	padding-top: 1em;
+	
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.nav-collapse h2 {
+	font-size: 2em;
+	text-shadow: none;
+	padding-left: 1em;
+}
+.nav-collapse h2:hover {
+	text-shadow: 2px 2px 20px #1D2434;
+}
+.nav-link {
+	display: block;
+	font-size: 1.75em;
+	color: aliceblue;
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	margin-top: 1em;
+}
+.nav-link:hover {
+	background: rgba(29, 36, 52, 0.9);
+}
+.nav-link a {
+	width: 100%;
+	display: block;
+}
+.contact-btn {
+	padding: 0.75em;
+	padding-left: 1em;
+	max-width: 200px;
+	background: firebrick;
+	color: aliceblue;
+	border-radius: 10px;
+	margin: 2.5% 5%;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'IM Fell English SC', serif;
+	font-family: 'Permanent Marker', cursive;
+	font-family: 'Kalam', cursive;
+	font-weight: bold;
+	font-size: 1.1em;
+	transition: all ease 0.25s;
+	opacity: 0.75;
+	opacity: 0.85;
+
+//	transition: all 200ms ease-in-out;
+	
+//	display: inline-block;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+.contact-btn:hover {
+//	background: rgba(29, 36, 52, 0.9);
+//	background: rgba(188, 69, 69, 0.9);
+	transform: scale(0.9);
+}
+.icon-container {
+//	width: 100%;
+//	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: fixed;
+	bottom: 7.5%;
+	right: 11%;
+
+	position: relative;
+	left: -7px;
+	bottom: 1px;
+
+	font-size: 1.25em;
+}
+.icon-container ion-icon {
+/*
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 50%;
+	transform: translate(-50%, -50%);
+	width: 10px;
+	height: 10px;
+	display: block;
+*/
+}
+.btn-hide {
+	opacity: 0;
+}
+.btn-slide {
+	animation-name: btnSlideL;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+}
+.btn-slide-away {
+	animation-name: btnSlideR;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+}
+@keyframes btnSlideR {
+	0% {
+		opacity: 0.85;
+		transform: translateX(0);
+	}
+	99% {
+		opacity: 0.85;
+	}
+	100% {
+		transform: translateX(100vw);
+		opacity: 0
+	}
+}
+@keyframes btnSlideL {
+	0% {
+		opacity: 0.85;
+		transform: translateX(100vw);
+	}
+	99% {
+		opacity: 0.85;
+	}
+	100% {
+		transform: translateX(0vw);
+		opacity: 0.85;
+	}
+}
+
+/*****************
+     Portfolio
+******************/
+
+.portfolio-bg {
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+//	background: #F7D5BE;
+ 	background-image: radial-gradient(circle, #f7d5be, #f0cdb6, #e9c6ae, #e2bea7, #dbb79f);
+	margin: 0;
+	padding: 0;
+}
+.portfolio-container {
+	width: 70%;
+	margin: 5% auto;
+	text-align: center;
+}
+.portfolio-container h2 {
+//	margin-bottom: 0.25em;
+	margin: 0 auto;
+	padding: 0.25em 0;
+}
+.portfolio-content {
+	font-size: 2em;
+	color: #F7D5BE;
+/* 	text-shadow: 2px 2px 50px firebrick; */
+}
+.selector-bar {
+	width: 100%;
+	font-size: 0.65em;
+	color: #1D2434;
+	margin-bottom: 0.35em;
+}
+.thumbnails-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+
+	position: relative;
+	height: 95%;
+	width: 100%;
+}
+figure.slide-out {
+	font-family: 'Encode Sans Condensed', sans-serif;
+	font-size: 0.75em;
+	background: firebrick;
+	background: #2e0e0a;
+	color: aliceblue;
+	position: relative;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 220px;
+	max-width: 310px;
+	width: 100%;
+	background: #000;
+	text-align: right;
+	border-radius: 1em;
+}
+figure.slide-out * {
+	box-sizing:border-box;
+	transition: all 400ms;
+}
+figure.slide-out img {
+	opacity: 1;
+	width: 100%;
+}
+figure.slide-out figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+figure.slide-out figcaption > div {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+figure.slide-out figcaption > div:nth-of-type(1) {
+	width: 78%;
+}
+figure.slide-out figcaption > div:nth-of-type(2) {
+	width: 22%;
+}
+figure.slide-out figcaption:before {
+	position: absolute;
+	top: 100%;
+	bottom: 0%;
+	right: 28%;
+	right: 22%;
+	width: 2px;
+	content: '';
+	opacity: 0;
+	background: rgba(255, 255, 255, 0);
+	transition: all 400ms;
+	transition-delay: 600ms;
+}
+figure.slide-out ion-icon,
+figure.slide-out p,
+figure.slide-out h3,
+figure.slide-out ul {
+	margin: 0;
+	opacity: 0;
+}
+figure.slide-out ion-icon {
+	background: firebrick;
+	position: absolute;
+	font-size: 28px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	top: 40px;
+	left: 0px;
+	transform: translateX(-50%);
+	transition-delay: 0s;
+}
+figure.slide-out p,
+figure.slide-out h3,
+figure.slide-out ul {
+	width: 100%;
+	padding: 10px 10px 40px 30px;
+	font-weight: 500;
+	transform: translateX(50%);
+	transition-delay: 0s;
+}
+figure.slide-out p {
+	font-size: 0.5em;
+}
+figure.slide-out h3 {
+	padding: 40px 10px 0px 30px;
+	font-weight: 600;
+	font-size: 1em;
+//	border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+figure.slide-out a {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	color: aliceblue;
+}
+figure.slide-out:hover img {
+	opacity: 0.25;
+}
+figure.slide-out:hover figcaption ion-icon,
+figure.slide-out.hover figcaption ion-icon,
+figure.slide-out:hover figcaption p,
+figure.slide-out.hover figcaption p,
+figure.slide-out:hover figcaption h3,
+figure.slide-out.hover figcaption h3 {
+	transform: translateX(0%);
+	transition-delay: 300ms;
+	opacity: 1;
+}
+figure.slide-out:hover figcaption::before,
+figure.slide-out.hover figcaption::before {
+	background: rgba(255, 255, 255, 0.8);
+	top: 40px;
+	opacity: 1;
+	transition-delay: 0s;
+}
+figure.slide-out:hover img {
+	transform: scale(1.1);
+}
+
+
+
+
+figure.fade-in {
+	font-family: 'Encode Sans Condensed', sans-serif;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 220px;
+//	min-height: 165px;
+	max-width: 310px;
+	max-height: 220px;
+
+	min-width: 304px;
+	min-width: 240px;
+	max-width: 312px;
+	max-height: 234px;
+	width: 100%;
+	background: #000;
+	background: firebrick;
+	background: rgba(178, 34, 34, 0.9);
+	text-align: center;
+}
+
+figure.fade-in * {
+	-webkit-box-sizing: padding-box;
+	box-sizing: padding-box;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+figure.fade-in img {
+	opacity: 0.7;
+	width: 100%;
+}
+
+figure.fade-in figcaption {
+	top: 50%;
+	left: 40px;
+	right: 40px;
+	position: absolute;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+figure.fade-in figcaption h3 {
+	position: relative;
+	font-weight: 400;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 10px #1D2434;
+	margin: 0;
+	-webkit-transform: translateY(75%);
+	transform: translateY(75%);
+}
+figure.fade-in .lower-case {
+	text-transform: none;
+}
+figure.fade-in .smaller {
+	font-size: 0.92em;
+}
+figure.fade-in figcaption h3 span {
+  font-weight: 800;
+}
+
+figure.fade-in figcaption p {
+	font-size: 0.9em;
+	font-size: 0.45em;
+	font-weight: 500;
+	opacity: 0;
+	margin: 0;
+}
+figure.fade-in .more-btn {
+	opacity: 0;
+//	margin-top: 10px;
+	border: 1px double #fff;
+//	z-index: 10;
+	cursor: pointer;
+	
+	width: 70%;
+	position: absolute;
+	bottom: 35px;
+	transition: none;
+}
+figure.fade-in .more-btn:hover {
+	background: rgba(255, 255, 255, 0.65);
+	color: #1D2434;
+	border: 1px double #1D2434;
+}
+figure.fade-in .background-link {
+	width: 100%;
+	height: 100%;
+}
+figure.fade-in:before,
+figure.fade-in:after {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	left: 20px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+	transition: opacity 0.6s, -webkit-transform 0.6s, -moz-transform 0.6s, -o-transform 0.6s, transform 0.6s;
+}
+
+figure.fade-in:before {
+	border-top: 1px double #fff;
+	border-bottom: 1px double #fff;
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1);
+}
+
+figure.fade-in:after {
+	border-right: 1px double #fff;
+	border-left: 1px double #fff;
+	-webkit-transform: scale(1, 0);
+	transform: scale(1, 0);
+}
+
+figure.fade-in .more-container {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	
+}
+
+figure.fade-in:hover img,
+figure.fade-in.hover img {
+	opacity: 0.2;
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+figure.fade-in:hover figcaption h3,
+figure.fade-in.hover figcaption h3,
+figure.fade-in:hover figcaption p,
+figure.fade-in.hover figcaption p,
+figure.fade-in:hover .more-btn,
+figure.fade-in.hover .more-btn {
+	opacity: 1;
+	border-color: rgba(255, 255, 255, 0.5);
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+figure.fade-in:hover figcaption p,
+figure.fade-in.hover figcaption p {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+figure.fade-in:hover:before,
+figure.fade-in.hover:before,
+figure.fade-in:hover:after,
+figure.fade-in.hover:after {
+	opacity: 0.8;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+
+
+
+
+
+.thumbnail-slide {
+//	position: absolute;
+//	top: 0;
+//	left: 0;
+//	margin: 0;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+}
+
+#roll {
+	display: inline-block;
+//	background-color: #0074d9;
+	background: rgba(178, 34, 34, 0.85);
+	height: 70%;
+	width: 70%;
+	height: 80%;
+	width: 80%;
+	max-width: 100%;
+	max-height: 100%;
+//	font-size: 1px;
+//	padding: 1px;
+//	color: white;
+//	margin-right: 5px;
+//	margin-left: 5px;
+	animation: roll 0.75s;
+	transform: rotate(0deg);
+	opacity: .75;
+}
+#roll-out {
+	display: inline-block;
+
+	background: rgba(178, 34, 34, 0.7);
+	height: 0%;
+	width: 0%;
+	max-width: 100%;
+	max-height: 100%;
+
+	transform: rotate(0deg);
+	opacity: 0;
+	animation: rollOut 0.75s;
+}
+
+@keyframes roll {
+	0% {
+		transform: rotate(0);
+		height: 25%;
+		width: 25%;
+	}
+	50% {
+
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes rollOut {
+	0% {
+		transform: rotate(0);
+		height: 80%;
+		width: 80%;
+		opacity: 0.75;
+	}
+	50% {
+		
+
+	}
+	100% {
+		transform: rotate(-360deg);
+		height: 25%;
+		width: 25%;
+		opacity: 0;
+	}
+}
+#roll figure {
+	height: 100%;
+}
+#roll figcaption {
+	height: 80%;
+	z-index: 10;
+//	position: absolute;
+//	top: 0;
+//	padding-bottom: 20%;
+}
+#roll .new-wrapper {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+#roll p {
+	margin-bottom: 0.65em;
+	font-size: 0.50em;
+}
+#roll p,
+#roll h3 {
+	font-weight: bold;
+}
+#roll h3 {
+	margin-bottom: 0.5em;
+}
+#roll span {
+	font-weight: 200;
+	padding-left: 5px;
+}
+#roll .normal {
+	font-weight: 200;
+	font-size: 0.9em;
+}
+#roll a {
+	font-weight: 900;
+	font-size: 1.25em;
+	color: #1D2434;
+//	text-shadow: 2px 2px 35px black;
+	padding-left: 10px;
+	opacity: 1;
+	
+	position: relative;
+	display: inline-block;
+}
+#roll a:after {
+//	display: block;
+//	content: '';
+	border-bottom: solid 3px #1D2434;
+//	transform: scaleX(0);
+//	transition: transform 300ms ease-in-out;
+//	transform-origin: 100% 50%;
+}
+.link:hover:after {
+//	transform: scaleX(1);
+//	transform-origin: 0 50%;
+}
+.link:hover {
+/* 	text-shadow: 2px 2px 20px firebrick; */
+}
+figure.fade-in .link1,
+figure.fade-in .link2 {
+	opacity: 0;
+//	margin-top: 10px;
+//	border: 1px double #fff;
+//	z-index: 10;
+	cursor: pointer;
+	
+	width: 70%;
+	position: absolute;
+//	bottom: 35px;
+//	transition: none;
+}
+figure.fade-in .link1 {
+	bottom: 85px;
+	bottom: 20%;
+}
+figure.fade-in .link2 {
+	bottom: 35px;
+	bottom: 10%;
+}
+figure.fade-in.hover .link1,
+figure.fade-in.hover .link2 {
+	opacity: 1;
+//	border-color: rgba(255, 255, 255, 0.5);
+//	-webkit-transition-delay: 0.2s;
+//	transition-delay: 0.2s;
+//	-webkit-transform: translateY(0);
+//	transform: translateY(0);
+}
+.close-btn {
+	position: absolute;
+	top: -30px;
+	right: -15px;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+.close-btn:hover {
+	color: #1D2434;
+}
+
+
+
+.js-hidden {
+	display: none !important;
+}
+</style>
+
+</head>
+<body id="top">
+
+	<header class="header" role="banner">
+		<h1>
+			<a class="initials hidden" href="#top">CT</a>
+			<a class="name name-slide-right" href="#top">Cody Thompson</a>
+		</h1>
+	</header>
+	
+	<nav role="navigation">
+		<ion-icon class="menu-btn" name="arrow-round-back" style="text-align: center"></ion-icon>
+		<div class="nav-collapse">
+			<ul>
+				<li><a href="#top"><h2>Cody&nbsp;Thompson</h2></a></li>
+<!--				<li><h3>- Full-Stack Web Developer -</h3></li>				-->
+				<li class="nav-link"><a href="#about">About</a></li>
+				<li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="home-container home-bg">
+		<div class="home-content-container">
+			
+			<h2>Full-Stack Web Developer</h2>
+			<div class="home-content">
+				Whether you need a quality website to attract and impress customers or a custom system application to track and streamline your specific business needs... I can help!
+			</div>
+			<div class="button"><a href="#"><span>LET'S GET STARTED!</span><i class="ion-arrow-right-c"></i></a></div>
+		</div>
+	</div>
+
+<article role="article">
+
+	<section class="about-bg" id="about">
+		<div class="about-container">
+			<h2>About Me</h2>
+			<div class="about-content">
+<!-- 				Hi there! My name is Cody Thompson and I am a full stack web developer based out of Fort Worth, Texas.  I love to code and have a passion for creating and discovering solutions to suit the particular needs of a given problem.  -->
+					<p>Hi there! My name is Cody Thompson and I am a full stack web developer based out of Fort Worth, Texas.  I love to code and have a passion for creating and discovering solutions to whatever problems come my way.</p>
+					<p>When not coding, I'm most likely spending time with my wife, our two dogs, and our newborn son, James!  If you'd like to learn more, give me a follow on <a class="link" href="#">linked in</a>, check out my <a class="link" href="#">resume</a>, or just <a class="link" href="#">send me a message!</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio-bg" id="portfolio">
+		<div class="portfolio-container">
+			<h2>Portfolio</h2>
+			<div class="portfolio-content">
+				<div class="selector-bar">All &nbsp;&middot;&nbsp; Front-End &nbsp;&middot;&nbsp; Back-End</div>
+				<div class="thumbnails-wrapper">
+<!--
+					<figure class="slide-out thumbnail" data-figure="0">
+						<img src="starwars.png" alt="Star Wars RPG">
+						<figcaption>
+							<div>
+								<h3>Star Wars RPG</h3>
+								<p>HTML5 &middot; CSS3 &middot; JavaScript &middot; jQuery</p>
+		
+							</div>
+							<div><ion-icon name="logo-game-controller-b"></ion-icon></div>
+							<a href="https://cdt12988.github.io/unit-4-game/" target="_blank"></a>
+						</figcaption>
+					</figure>
+-->
+					<figure class="fade-in thumbnail" data-figure="0">
+						<img data-img="0" src="images/portfolio/starwars2.png" alt="Star Wars RPG">
+						<figcaption>
+							<h3><span>Star Wars</span> RPG</h3>
+							<p>HTML5 &middot; CSS3 &middot; JavaScript &middot; jQuery</p>
+							<br>
+						</figcaption>
+
+						<div class="more-container" href="https://cdt12988.github.io/unit-4-game/" target="_blank">
+							<a class="background-link" href="https://cdt12988.github.io/unit-4-game/" target="_blank"></a>
+							<a class="more-btn" data-figure="0" href="#portfolio">Learn More</a>
+						</div>		
+					</figure>
+					<figure class="fade-in thumbnail" data-figure="1">
+						<img data-img="1" src="images/portfolio/giftv.png" alt="gifTV">
+						<figcaption>
+							<h3 class="lower-case">gif&middot;<span>TV</span></h3>
+							<p>HTML5 &middot; CSS3 &middot; JS &middot; jQuery &middot; JSON API</p>
+							<br>
+						</figcaption>
+
+						<div class="more-container" href="https://cdt12988.github.io/gifTV/" target="_blank">
+							<a class="background-link" href="https://cdt12988.github.io/gifTV/" target="_blank"></a>
+							<a class="more-btn" data-figure="1" href="#portfolio">Learn More</a>
+						</div>		
+					</figure>
+					<figure class="fade-in thumbnail" data-figure="2">
+						<img data-img="2" src="images/portfolio/hangman.png" alt="Hangman Game">
+						<figcaption>
+							<h3>Hang<span>man</span></h3>
+							<p>HTML5 &middot; CSS3 &middot; JavaScript &middot; jQuery</p>
+							<br>
+						</figcaption>
+
+						<div class="more-container" href="https://cdt12988.github.io/Word-Guess-Game/" target="_blank">
+							<a class="background-link" href="https://cdt12988.github.io/Word-Guess-Game/" target="_blank"></a>
+							<a class="more-btn" data-figure="2" href="#portfolio">Learn More</a>
+						</div>		
+					</figure>
+					<figure class="fade-in thumbnail" data-figure="3">
+						<img data-img="3" src="images/portfolio/journey2.jpg" alt="Fitness App">
+						<figcaption>
+							<h3>My <span>Journey</span></h3>
+							<p>HTML5 &middot; CSS3 &middot; JS &middot; jQuery &middot; Firebase</p>
+							<br>
+						</figcaption>
+
+						<div class="more-container" href="https://peterj330.github.io/GroupProject/" target="_blank">
+							<a class="background-link" href="https://peterj330.github.io/GroupProject/" target="_blank"></a>
+							<a class="more-btn" data-figure="3" href="#portfolio">Learn More</a>
+						</div>		
+					</figure>
+					<figure class="fade-in thumbnail" data-figure="4">
+						<img data-img="4" src="images/portfolio/mcu.png" alt="MCU Trivia">
+						<figcaption>
+							<h3><span>MCU</span> Trivia</h3>
+							<p>HTML5 &middot; CSS3 &middot; JavaScript &middot; jQuery</p>
+							<br>
+						</figcaption>
+
+						<div class="more-container" href="https://cdt12988.github.io/TriviaGame/" target="_blank">
+							<a class="background-link" href="https://cdt12988.github.io/TriviaGame/" target="_blank"></a>
+							<a class="more-btn" data-figure="4" href="#portfolio">Learn More</a>
+						</div>		
+					</figure>
+					<figure class="fade-in thumbnail" data-figure="5">
+						<img data-img="5" src="images/portfolio/rps.png" alt="Rock Paper Scissors">
+						<figcaption>
+							<h3 class="smaller"><span>RPS</span> Multiplayer</h3>
+							<p>HTML5 &middot; CSS3 &middot; JS &middot; jQuery &middot; Firebase</p>
+							<br>
+						</figcaption>
+
+						<div class="more-container" href="https://cdt12988.github.io/rps-multiplayer/" target="_blank">
+							<a class="background-link" href="https://cdt12988.github.io/rps-multiplayer/" target="_blank"></a>
+							<a class="more-btn" data-figure="5" href="#portfolio">Learn More</a>
+						</div>		
+					</figure>
+					<figure class="fade-in thumbnail" data-figure="6">
+						<img data-img="6" src="images/portfolio/mouse-hunters.png" alt="Mouse Hunters Game">
+						<figcaption>
+							<h3 class="lower-case"><span>mouse</span> hunters</h3>
+							<p>Scratch</p>
+							<br>
+						</figcaption>
+
+						<div class="more-container" href="https://scratch.mit.edu/projects/227415079/" target="_blank">
+							<a class="background-link" href="https://scratch.mit.edu/projects/227415079/" target="_blank"></a>
+							<a class="more-btn" data-figure="6" href="#portfolio">Learn More</a>
+						</div>		
+					</figure>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<div>Bottom of Page</div>
+
+</article>
+<footer role="contentinfo">
+	<div class="contact-btn btn-hide">
+		<div class="icon-container">
+			<ion-icon name="mail"></ion-icon>
+		</div>
+		Message
+	</div>
+</footer>
+</body>
+
+<script>
+	var docReady = false;
+	var nav = false;
+
+//	$(document).scrollTop(0);
+
+	$(window).on("scroll", function () {
+
+
+/*
+		
+
+		if($(this).scrollTop() > 75) {
+			$('.name').addClass('name-slide');
+		} else {
+			$('.name').removeClass('name-slide');
+		}
+*/
+
+// console.log('window ht: ' + $(window).height());
+
+		var ht = $('.home-container').height();
+
+		if($(this).scrollTop() > ht/2) {
+
+			if(!nav) {
+				$('.contact-btn').removeClass('btn-hide btn-slide-away').addClass('btn-slide');
+			}
+
+
+//		} else if($(this).scrollTop() > 50) {
+	      	 	$('.initials').removeClass('hidden ini-slide-left').addClass('initials-slide');
+ 	       		$('.name').addClass('hidden name-slide').removeClass('name-slide-right');
+//	       		$('.name').addClass('hidden');
+			docReady = true;
+
+			
+
+		} else if(docReady) {
+
+			$('.initials').addClass('hidden ini-slide-left').removeClass('initials-slide');
+	       		$('.name').removeClass('hidden name-slide').addClass('name-slide-right');
+//	       		$('.name').removeClass('name-slide');
+
+			if(!nav) {
+				$('.contact-btn').addClass('btn-hide btn-slide-away').removeClass('btn-slide');
+			}
+		
+	    	}
+
+//		if($(this).scrollTop() < ht/2) {
+
+//			$('.contact-btn').addClass('btn-hide btn-slide-away').removeClass('btn-slide');
+//		}
+
+	});
+
+
+$(document).ready(function(){
+
+	
+
+	$('.menu-btn').click(function() {
+		$(this).toggleClass('btn-menu-open');
+		$(this).attr('name') === 'arrow-round-back' ? $(this).attr('name', 'arrow-round-forward') : $(this).attr('name', 'arrow-round-back');
+		$('.nav-collapse').toggleClass('menu-open');
+		if($(this).hasClass('btn-menu-open')) {
+			$('.contact-btn').addClass('btn-hide')
+		}
+		nav == true ? nav = false : nav = true;
+		console.log(nav);
+	});
+
+
+	$('a[href^="#"]').click(function(event) {
+		var target = $(this.getAttribute('href'));
+
+		if(target.length) {
+			event.preventDefault();
+			$('html, body').stop().animate({
+				scrollTop: target.offset().top
+			}, 1000);
+		}
+	});
+
+	$(document).click(function(event) {
+		if($('.nav-collapse').attr('class') == 'nav-collapse menu-open') {
+			if(event.target.closest('.nav-collapse') || event.target.closest('.menu-btn')) {
+				return;
+			} else {
+				$('.nav-collapse').toggleClass('menu-open');
+				$('.menu-btn').toggleClass('btn-menu-open');
+				$('.menu-btn').attr('name') === 'arrow-round-back' ? $('.menu-btn').attr('name', 'arrow-round-forward') 
+					: $('.menu-btn').attr('name', 'arrow-round-back');
+				nav = false;
+			}
+		}
+	});
+
+	$('.more-btn').click(function() {
+		$('#roll-out').remove();
+//		$('.selector-bar').addClass('js-hidden');
+		var thumbnails = document.getElementsByClassName('thumbnail');
+		var figure = $(this).attr('data-figure');
+		var img = $('[data-img="' + figure + '"]').attr('src');
+		console.log(img);
+/*
+		for(var i=0; i < thumbnails.length; i++) {
+			if(i != figure) {
+				$('[data-figure="' + i + '"]').addClass('js-hidden');
+			} else {
+				$('[data-figure="' + i + '"]').attr('id', 'roll');
+				$('[data-figure="' + i + '"]').addClass('.thumbnail-slide');
+//				$('[data-figure="' + i + '" *]').css('transition', 'all 200ms linear');
+//				$('[data-figure="' + i + '"]').removeClass(
+				$('figcaption').addClass('js-hidden');
+				$('.more-container').addClass('js-hidden');
+			}
+		}
+*/
+		for(var i=0; i < thumbnails.length; i++) {
+			$('[data-figure="' + i + '"]').addClass('js-hidden');
+		}
+/*
+		newImg = $('<img>').attr({
+			'src': img,
+			'class': 'thumbnail-slide',
+			'id': 'roll'
+		});
+		$('.thumbnails-wrapper').append(newImg);
+*/
+		var newFigure = $('<figure>').attr('id', 'roll');
+		newFigure.addClass('fade-in hover');
+		var newImg = $('<img>').attr('src', img);
+		var newFigCap = $('<figcaption>');
+		var newHeader = $('<h3>').text('Star Wars');
+			var headerSpan = $('<span>').text(' RPG');
+			newHeader.append(headerSpan);
+		var newContentWrap = $('<div>');
+		var languages = $('<p>').html('LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript &nbsp;&middot;&nbsp; jQuery</p>');
+		var emphasis = $('<p>').html(
+			'EMPHASES <p class="normal">jQuery DOM Manipulation &nbsp;&middot;&nbsp; CSS Transitions &nbsp;&middot;&nbsp; Game/App Status Tracking &nbsp;&middot;&nbsp; JS Object Tracking</p>'
+		);
+		var description = $('<p>').text('Star Wars RPG')
+			var descriptionSpan = $('<span>').text(
+				'allows you to select 1 of 10 available characters. Out of the remaining characters, 3 are chosen randomly for you to combat. Your goal is to defeat all 3 and advance to the next round where 3 more opponents are randomly selected from those remaining.  Defeat all 9 enemies to win!'
+			);
+			description.append(descriptionSpan);
+		var logic = $('<p>').html(
+			'<span>Your attacks get stronger each time you attack, while the enemies attack you back for a random amount based upon their "Attack Power".</span>'
+		);
+
+		var app = $('<p>').text('APP ');
+			var appLink = $('<a>').attr({
+				'href': 'https://cdt12988.github.io/unit-4-game/',
+				'target': '_blank'
+			}).text('https://cdt12988.github.io/unit-4-game/');
+		app.append(appLink);
+		var git = $('<p>').text('GITHUB ');
+			var gitLink = $('<a>').attr({
+				'href': 'https://github.com/cdt12988/unit-4-game/',
+				'target': '_blank'
+			}).text('https://github.com/cdt12988/unit-4-game/');
+		git.append(gitLink);
+
+		var break1 = $('<br>');
+		var break2 = $('<br>');
+
+		var newLinks = $('<div>').addClass('more-container');
+		var app2 = $('<p>').text('APP ').addClass('link1');
+			var appLink2 = $('<a>').attr({
+				'href': 'https://cdt12988.github.io/unit-4-game/',
+				'target': '_blank'
+			}).text('https://cdt12988.github.io/unit-4-game/');
+		app2.append(appLink2);
+		var git2 = $('<p>').text('GITHUB ').addClass('link2');
+			var gitLink2 = $('<a>').attr({
+				'href': 'https://github.com/cdt12988/unit-4-game/',
+				'target': '_blank'
+			}).text('https://github.com/cdt12988/unit-4-game/');
+		git2.append(gitLink2);
+
+		var newWrapper = $('<div>').addClass('new-wrapper');
+		newWrapper.append(newFigCap, newLinks);
+		
+		newLinks.append(app2, git2);
+
+		var closeBtn = $('<ion-icon>').attr({
+			'name': 'close',
+			'class': 'close-btn'
+		});
+
+		newContentWrap.append(languages, emphasis, description, logic, app, git);
+//		newContentWrap.append(languages, emphasis, description, logic, break1, break2);
+
+		newFigCap.append(newHeader, newContentWrap, closeBtn);
+
+		newFigure.append(newImg, newFigCap)
+//		newFigure.append(newImg, newFigCap, newLinks);
+//		newFigure.append(newImg, newWrapper);
+
+		$('.thumbnails-wrapper').append(newFigure);
+	});
+	
+
+	$(document).on('click', '.close-btn', function() {
+		var thumbnails = document.getElementsByClassName('thumbnail');
+		$('#roll').attr('id', 'roll-out');
+//		for(var i=0; i < thumbnails.length; i++) {
+//			$('[data-figure="' + i + '"]').addClass('hidden');
+//		}
+		setTimeout(function() {
+			for(var i=0; i < thumbnails.length; i++) {
+				$('[data-figure="' + i + '"]').removeClass('js-hidden');
+				$('[data-figure="' + i + '"]').addClass('initials-slide');
+			}
+		}, 550);
+//		setTimeout(function() {
+//			$('.selector-bar').removeClass('js-hidden');
+//		}, 750);
+	});
+});
+</script>
 </html>
+
+
