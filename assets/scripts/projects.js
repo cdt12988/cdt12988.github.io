@@ -1,0 +1,75 @@
+var projects = {
+
+	starwars: {
+		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript &nbsp;&middot;&nbsp; jQuery</p>',
+		emphases: 'EMPHASES <p class="normal">jQuery DOM Manipulation &nbsp;&middot;&nbsp; CSS Transitions &nbsp;&middot;&nbsp; Game/App Status Tracking &nbsp;&middot;&nbsp; JS Object Tracking</p>',
+		src: 'images/portfolio/starwars.PNG',
+		title: 'Star Wars <span>RPG</span>',
+		p1: 'Star Wars RPG<span>allows you to select 1 of 10 available characters. Out of the remaining characters, 3 are chosen randomly for you to combat. Your goal is to defeat all 3 and advance to the next round where 3 more opponents are randomly selected from those remaining.  Defeat all 9 enemies to win!</span>',
+		p2: '<span>Your attacks get stronger each time you attack, while the enemies attack you back for a random amount based upon their "Attack Power".</span>',
+		appLink: 'https://cdt12988.github.io/unit-4-game/',
+		gitHub: 'https://github.com/cdt12988/unit-4-game/'
+	},
+	gifTV: {
+		src: 'images/portfolio/gifTV.PNG',
+		title: 'gif<span>&middot;TV</span>',
+		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript &nbsp;&middot;&nbsp; jQuery &nbsp;&middot;&nbsp; GIPHY API</p>',
+		emphases: 'EMPHASES <p class="normal">User-Customized Ajax API Calls (JSON Formatting) &nbsp;&middot;&nbsp; Local Storage Data Persistence &nbsp;&middot;&nbsp; Advanced CSS/jQuery Displays &nbsp;&middot;&nbsp; JS Object Tracking &nbsp;&middot;&nbsp; Multiple Features</p>',
+		p1: 'gifTV<span>is a multi-featured app that allows the user to surf through channels of gifs much like you would a normal TV.  It uses a fully functional remote to accept a wide variety of user inputs, including built-in guide, help and info menus which can all be navigated through the remote itself, channel/gif surfing with both directional (up/down) and number-pad navigation, as well as several other features you would expect to find on your TV remote.</span>',
+		p2: '<span>The app comes loaded with over 50 default gif channels, each containing 10 related gifs.  Users can customize their gifTV by adding more channels, additional gifs, or even favoriting any gif they come across so that it shows up on their "Favorites" channel.  The app is data-persistent so that even when you close the app and come back to it later, it will remember all of your previous settings</span>',
+		appLink: 'https://cdt12988.github.io/gifTV/',
+		gitHub: 'https://github.com/cdt12988/gifTV/'
+	},
+	hangman: {
+		src: 'images/portfolio/gifTV.PNG',
+		title: '<span>Hang</span>man',
+		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript</p>',
+		emphases: 'EMPHASES <p class="normal">Manipulating the DOM via vanilla JavaScript &nbsp;&middot;&nbsp; HTML Canvas &nbsp:&middot;&nbsp; Handling user event listeners &nbsp;&middot;&nbsp; Game Logic with user customizations</p>',
+		p1: 'Hangman<span> functions just as the classic game does originally.  The user guesses letters in a word. A correct guess displays all instances of the guessed letter, but a wrong answer leads the user one step closer to defeat (as illustrated using the HTML Canvas which draws the Hangman illustration for the user to see).  The game continues until the word is guessed or the stickman figure is completely drawn.</span>',
+		p2: '<span>The user can pick from various categories of words to play with or have one selected at random.  The game keeps track of wins and losses, as well as the current winning streak.  Dynamic messages appear throughout the game depending on current circumstances.</span>',
+		appLink: 'https://cdt12988.github.io/Word-Guess-Game/',
+		gitHub: 'https://github.com/cdt12988/Word-Guess-Game'
+	},
+	rps: {
+		src: 'images/portfolio/rps.PNG',
+		title: 'Rock Paper Scissors <span>Multiplayer</span>',
+		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JS/jQuery &nbsp;&middot;&nbsp; Firebase</p>',
+		emphases: 'EMPHASES <p class="normal">Live user input and data handling &nbsp;&middot;&nbsp; Fully functioning chat system &nbsp;&middot;&nbsp; Game Logic/Tracking &nbsp;&middot;&nbsp; Firebase Data Persistence</p>',
+		p1: '<span>This classic game of </span>Rock Paper Scissors<span> uses Firebase\'s real time database to allow multiple players to join and play together live.  To get the best experience with this game, have a friend visit the link with you and play against each other in real time (or if you find yourself currently friendless, you can open the link in two different browser tabs and play against yourself)!</span>',
+		p2: '<span>Each player will have their own unique display to ensure they don\'t know what the other person has selected, and because no multiplayer game is truly complete without friendly banter, a live chat system is also included where users can chat back and forth with one another!</span>',
+		appLink: 'https://cdt12988.github.io/rps-multiplayer/',
+		gitHub: 'https://github.com/cdt12988/rps-multiplayer'
+	},
+	mcu: {
+		src: 'images/portfolio/mcu.PNG',
+		title: 'Marvel Movie <span>Trivia</span>',
+		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript &nbsp;&middot;&nbsp; jQuery</p>',
+		emphases: 'EMPHASES <p class="normal">Setting, clearing and manipulating timeouts in JS &nbsp;&middot;&nbsp; jQuery DOM manipulation &nbsp;&middot;&nbsp; Index tracking for multiple and randomized data arrays &nbsp;&middot;&nbsp; Mobile Responsiveness</p>',
+		p1: 'MCU Trivia<span>is a quick trivia game consisting of 10 timed questions about the Marvel Cinematic Universe (spoilers within). Each question is randomly selected from a bank of over 60 questions and offers 4 multiple choice options (whose orders are always randomized).</span>',
+		p2: '<span>The app uses timers for both the questions and the result screen which displays briefly after each question before moving on.  The entire game can be reset at the end, allowing the user to start over just as before.  The app displays properly for both larger and mobile screens.</span>',
+		appLink: 'https://cdt12988.github.io/TriviaGame/',
+		gitHub: 'https://github.com/cdt12988/TriviaGame'
+	},
+	myJourney: {
+		src: 'images/portfolio/journey.jpg',
+		title: '<span>My</span> Journal',
+		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JS/jQuery &nbsp;&middot;&nbsp; Firebase &nbsp;&middot;&nbsp; JSON API &nbsp;&middot;&nbsp; Moment.JS &nbsp;&middot;&nbsp; Bootstrap</p>',
+		emphases: 'EMPHASES <p class="normal">Firebase User Authentication &nbsp;&middot;&nbsp; Firebase Data Storage &nbsp;&middot;&nbsp; Daily User Logs &nbsp;&middot;&nbsp; Ajax API Calls (JSON Formatting) &nbsp;&middot;&nbsp; User Input Validations</p>',
+		p1: 'My Journey<span> is a fitness app designed to track daily nutrition intake. It uses Firebase User Authentication to create and track user accounts, allowing the app to be fully capable of supporting hundreds of new users, each tracking their own daily nutrition.  All user data is stored within the Firebase real time database for instant updates.</span>',
+		p2: 'The app tracks when and how often a user logs in, and even runs a tutorial system the first time it senses that a new user has been created and added to the database.  Users can search the USDA Nutrition API for the nutritional value of their foods, or simply type in their food manually.  Either way, they can log the food to their daily logs or save them to be viewed later.  The app uses Moment.js to keep track of the current and previous days, allowing users to view past information as well.',
+		appLink: 'https://cdt12988.github.io/fitness-app/',
+		gitHub: 'https://github.com/cdt12988/fitness-app'
+	},
+	mousehunters: {
+		src: 'images/portfolio/mouse-hunters.PNG',
+		title: 'Mouse <span>Hunters</span>',
+		languages: 'LANGUAGES <p class="normal">Scratch</p>',
+		emphases: 'EMPHASES <p class="normal">Basic Programming/Game Logic &nbsp;&middot;&nbsp; Complex data manupulation based on user inputs &nbsp;&middot;&nbsp; Visual/Audio User Queues and Thematics &nbsp;&middot;&nbsp; Custom High Score Display System</p>',
+		p1: 'Mouse Hunters<span> is a game developed using MIT\'s Visual Programming Language, Scratch.  The Space Invaders-style game allows the user to play as a cat as they attempt to stop mice, birds, rats, and giant rats from making it to the bottom of the screen by either shooting balls of yarn at them or eating them (but eating too many results in pesky hairballs, so be careful)!</span>',
+		p2: '<span>The game tracks levels and increases in difficulty as the game progresses.  It also has various powerups to help the player along their way.  It comes complete with a start menu and a gameover menu.  The game can be paused at any point, completely stopping all action until unpaused.  There is also a built-in high score menu (though the data is not persistent, due to the nature of Scratch).  While not a traditional language, I felt this fun little game demonstrated complex enough logic to warrant a spot on my portfolio page!</span>',
+		appLink: 'https://scratch.mit.edu/projects/227415079/',
+		gitHub: 'N/A'
+	}
+};
+
+

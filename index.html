@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700|IM+Fell+English+SC|Kalam|Permanent+Marker" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto+Condensed" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<script src="assets/scripts/projects.js" defer></script>
 <style>
 
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
@@ -1148,7 +1149,12 @@ figure.fade-in.hover .link2 {
 .close-btn:hover {
 	color: #1D2434;
 }
-
+#all:hover,
+#front-end:hover,
+#back-end:hover {
+	border-bottom: 2px solid #1D2434;
+	cursor: pointer;
+}
 
 
 .js-hidden {
@@ -1205,7 +1211,7 @@ figure.fade-in.hover .link2 {
 		<div class="portfolio-container">
 			<h2>Portfolio</h2>
 			<div class="portfolio-content">
-				<div class="selector-bar">All &nbsp;&middot;&nbsp; Front-End &nbsp;&middot;&nbsp; Back-End</div>
+				<div class="selector-bar"><span id="all">All</span> &nbsp;&middot;&nbsp; <span id="front-end">Front-End</span> &nbsp;&middot;&nbsp; <span id="back-end">Back-End</span></div>
 				<div class="thumbnails-wrapper">
 <!--
 					<figure class="slide-out thumbnail" data-figure="0">
@@ -1222,7 +1228,7 @@ figure.fade-in.hover .link2 {
 					</figure>
 -->
 					<figure class="fade-in thumbnail" data-figure="0">
-						<img data-img="0" src="images/portfolio/starwars2.PNG" alt="Star Wars RPG">
+						<img data-img="0" src="images/portfolio/starwars.PNG" alt="Star Wars RPG">
 						<figcaption>
 							<h3><span>Star Wars</span> RPG</h3>
 							<p>HTML5 &middot; CSS3 &middot; JavaScript &middot; jQuery</p>
@@ -1231,7 +1237,7 @@ figure.fade-in.hover .link2 {
 
 						<div class="more-container" href="https://cdt12988.github.io/unit-4-game/" target="_blank">
 							<a class="background-link" href="https://cdt12988.github.io/unit-4-game/" target="_blank"></a>
-							<a class="more-btn" data-figure="0" href="#portfolio">Learn More</a>
+							<a class="more-btn" data-figure="0" href="#portfolio" data-name="starwars">Learn More</a>
 						</div>		
 					</figure>
 					<figure class="fade-in thumbnail" data-figure="1">
@@ -1244,7 +1250,7 @@ figure.fade-in.hover .link2 {
 
 						<div class="more-container" href="https://cdt12988.github.io/gifTV/" target="_blank">
 							<a class="background-link" href="https://cdt12988.github.io/gifTV/" target="_blank"></a>
-							<a class="more-btn" data-figure="1" href="#portfolio">Learn More</a>
+							<a class="more-btn" data-figure="1" href="#portfolio" data-name="gifTV">Learn More</a>
 						</div>		
 					</figure>
 					<figure class="fade-in thumbnail" data-figure="2">
@@ -1257,20 +1263,20 @@ figure.fade-in.hover .link2 {
 
 						<div class="more-container" href="https://cdt12988.github.io/Word-Guess-Game/" target="_blank">
 							<a class="background-link" href="https://cdt12988.github.io/Word-Guess-Game/" target="_blank"></a>
-							<a class="more-btn" data-figure="2" href="#portfolio">Learn More</a>
+							<a class="more-btn" data-figure="2" href="#portfolio" data-name="hangman">Learn More</a>
 						</div>		
 					</figure>
 					<figure class="fade-in thumbnail" data-figure="3">
 						<img data-img="3" src="images/portfolio/journey2.jpg" alt="Fitness App">
 						<figcaption>
 							<h3>My <span>Journey</span></h3>
-							<p>HTML5 &middot; CSS3 &middot; JS &middot; jQuery &middot; Firebase</p>
+							<p>HTML5 / CSS3 &middot; JS / jQuery &middot; Firebase &middot; JSON API</p>
 							<br>
 						</figcaption>
 
-						<div class="more-container" href="https://peterj330.github.io/GroupProject/" target="_blank">
-							<a class="background-link" href="https://peterj330.github.io/GroupProject/" target="_blank"></a>
-							<a class="more-btn" data-figure="3" href="#portfolio">Learn More</a>
+						<div class="more-container" href="https://cdt12988.github.io/fitness-app/" target="_blank">
+							<a class="background-link" href="https://cdt12988.github.io/fitness-app/" target="_blank"></a>
+							<a class="more-btn" data-figure="3" href="#portfolio" data-name="myJourney">Learn More</a>
 						</div>		
 					</figure>
 					<figure class="fade-in thumbnail" data-figure="4">
@@ -1283,7 +1289,7 @@ figure.fade-in.hover .link2 {
 
 						<div class="more-container" href="https://cdt12988.github.io/TriviaGame/" target="_blank">
 							<a class="background-link" href="https://cdt12988.github.io/TriviaGame/" target="_blank"></a>
-							<a class="more-btn" data-figure="4" href="#portfolio">Learn More</a>
+							<a class="more-btn" data-figure="4" href="#portfolio" data-name="mcu">Learn More</a>
 						</div>		
 					</figure>
 					<figure class="fade-in thumbnail" data-figure="5">
@@ -1296,7 +1302,7 @@ figure.fade-in.hover .link2 {
 
 						<div class="more-container" href="https://cdt12988.github.io/rps-multiplayer/" target="_blank">
 							<a class="background-link" href="https://cdt12988.github.io/rps-multiplayer/" target="_blank"></a>
-							<a class="more-btn" data-figure="5" href="#portfolio">Learn More</a>
+							<a class="more-btn" data-figure="5" href="#portfolio" data-name="rps">Learn More</a>
 						</div>		
 					</figure>
 					<figure class="fade-in thumbnail" data-figure="6">
@@ -1309,7 +1315,7 @@ figure.fade-in.hover .link2 {
 
 						<div class="more-container" href="https://scratch.mit.edu/projects/227415079/" target="_blank">
 							<a class="background-link" href="https://scratch.mit.edu/projects/227415079/" target="_blank"></a>
-							<a class="more-btn" data-figure="6" href="#portfolio">Learn More</a>
+							<a class="more-btn" data-figure="6" href="#portfolio" data-name="mousehunters">Learn More</a>
 						</div>		
 					</figure>
 				</div>
@@ -1457,69 +1463,46 @@ $(document).ready(function(){
 
 	$('.more-btn').click(function() {
 		$('#roll-out').remove();
-//		$('.selector-bar').addClass('js-hidden');
+
 		var thumbnails = document.getElementsByClassName('thumbnail');
 		var figure = $(this).attr('data-figure');
-		var img = $('[data-img="' + figure + '"]').attr('src');
-		console.log(img);
-/*
-		for(var i=0; i < thumbnails.length; i++) {
-			if(i != figure) {
-				$('[data-figure="' + i + '"]').addClass('js-hidden');
-			} else {
-				$('[data-figure="' + i + '"]').attr('id', 'roll');
-				$('[data-figure="' + i + '"]').addClass('.thumbnail-slide');
-//				$('[data-figure="' + i + '" *]').css('transition', 'all 200ms linear');
-//				$('[data-figure="' + i + '"]').removeClass(
-				$('figcaption').addClass('js-hidden');
-				$('.more-container').addClass('js-hidden');
-			}
-		}
-*/
+		var name = $(this).data('name');
+// 		var img = $('[data-img="' + figure + '"]').attr('src');
+		console.log(name);
+		var src = projects[name].src;
+
 		for(var i=0; i < thumbnails.length; i++) {
 			$('[data-figure="' + i + '"]').addClass('js-hidden');
 		}
-/*
-		newImg = $('<img>').attr({
-			'src': img,
-			'class': 'thumbnail-slide',
-			'id': 'roll'
-		});
-		$('.thumbnails-wrapper').append(newImg);
-*/
+
 		var newFigure = $('<figure>').attr('id', 'roll');
 		newFigure.addClass('fade-in hover');
-		var newImg = $('<img>').attr('src', img);
+		var newImg = $('<img>').attr('src', src);
 		var newFigCap = $('<figcaption>');
-		var newHeader = $('<h3>').text('Star Wars');
-			var headerSpan = $('<span>').text(' RPG');
-			newHeader.append(headerSpan);
+		var newHeader = $('<h3>').html(projects[name].title);
+		if(name == 'gifTV') {
+			newHeader.addClass('lower-case');
+		}
 		var newContentWrap = $('<div>');
-		var languages = $('<p>').html('LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript &nbsp;&middot;&nbsp; jQuery</p>');
-		var emphasis = $('<p>').html(
-			'EMPHASES <p class="normal">jQuery DOM Manipulation &nbsp;&middot;&nbsp; CSS Transitions &nbsp;&middot;&nbsp; Game/App Status Tracking &nbsp;&middot;&nbsp; JS Object Tracking</p>'
-		);
-		var description = $('<p>').text('Star Wars RPG')
-			var descriptionSpan = $('<span>').text(
-				'allows you to select 1 of 10 available characters. Out of the remaining characters, 3 are chosen randomly for you to combat. Your goal is to defeat all 3 and advance to the next round where 3 more opponents are randomly selected from those remaining.  Defeat all 9 enemies to win!'
-			);
-			description.append(descriptionSpan);
-		var logic = $('<p>').html(
-			'<span>Your attacks get stronger each time you attack, while the enemies attack you back for a random amount based upon their "Attack Power".</span>'
-		);
+		var languages = $('<p>').html(projects[name].languages);
+		var emphasis = $('<p>').html(projects[name].emphases);
+		var description = $('<p>').html(projects[name].p1);
+		var logic = $('<p>').html(projects[name].p2);
 
 		var app = $('<p>').text('APP ');
 			var appLink = $('<a>').attr({
-				'href': 'https://cdt12988.github.io/unit-4-game/',
+				'href': projects[name].appLink,
 				'target': '_blank'
-			}).text('https://cdt12988.github.io/unit-4-game/');
+			}).text(projects[name].appLink);
 		app.append(appLink);
-		var git = $('<p>').text('GITHUB ');
-			var gitLink = $('<a>').attr({
-				'href': 'https://github.com/cdt12988/unit-4-game/',
-				'target': '_blank'
-			}).text('https://github.com/cdt12988/unit-4-game/');
-		git.append(gitLink);
+		if(name != 'mousehunters') {
+			var git = $('<p>').text('GITHUB ');
+				var gitLink = $('<a>').attr({
+					'href': projects[name].gitHub,
+					'target': '_blank'
+				}).text(projects[name].gitHub);
+			git.append(gitLink);
+		}
 
 		var break1 = $('<br>');
 		var break2 = $('<br>');
@@ -1547,8 +1530,12 @@ $(document).ready(function(){
 			'name': 'close',
 			'class': 'close-btn'
 		});
-
-		newContentWrap.append(languages, emphasis, description, logic, app, git);
+		
+		if(name != 'mousehunters') {
+			newContentWrap.append(languages, emphasis, description, logic, app, git);
+		} else {
+			newContentWrap.append(languages, emphasis, description, logic, app)
+		}
 //		newContentWrap.append(languages, emphasis, description, logic, break1, break2);
 
 		newFigCap.append(newHeader, newContentWrap, closeBtn);
@@ -1571,13 +1558,52 @@ $(document).ready(function(){
 			for(var i=0; i < thumbnails.length; i++) {
 				$('[data-figure="' + i + '"]').removeClass('js-hidden');
 				$('[data-figure="' + i + '"]').addClass('initials-slide');
+// 				$('[data-figure="' + i + '"]').removeClass('initials-slide');
 			}
 		}, 550);
 //		setTimeout(function() {
 //			$('.selector-bar').removeClass('js-hidden');
 //		}, 750);
 	});
-});
+	
+	$('#all').click(function() {
+		var thumbnails = document.getElementsByClassName('thumbnail');
+		for(var i=0; i < thumbnails.length; i++) {
+				$('[data-figure="' + i + '"]').removeClass('js-hidden');
+// 				$('[data-figure="' + i + '"]').addClass('initials-slide');
+				$('[data-figure="' + i + '"]').removeClass('initials-slide');
+		}
+	});
+	
+	$('#front-end').click(function() {
+		var thumbnails = document.getElementsByClassName('thumbnail');
+		for(var i=0; i < thumbnails.length; i++) {
+			if(i == 6 || i == 5) {
+				$('[data-figure="' + i + '"]').addClass('js-hidden');
+// 				$('[data-figure="' + i + '"]').removeClass('initials-slide');
+			} else {
+				$('[data-figure="' + i + '"]').removeClass('js-hidden');
+// 				$('[data-figure="' + i + '"]').addClass('initials-slide');
+			}
+			$('[data-figure="' + i + '"]').removeClass('initials-slide');
+		}
+	});
+	
+	$('#back-end').click(function() {
+		var thumbnails = document.getElementsByClassName('thumbnail');
+		for(var i=0; i < thumbnails.length; i++) {
+			if(i == 3 || i ==5) {
+				$('[data-figure="' + i + '"]').removeClass('js-hidden');
+// 				$('[data-figure="' + i + '"]').addClass('initials-slide');
+			} else {
+				$('[data-figure="' + i + '"]').addClass('js-hidden');
+// 				$('[data-figure="' + i + '"]').removeClass('initials-slide');
+			}
+			$('[data-figure="' + i + '"]').removeClass('initials-slide');
+		}
+	});
+	
+});		//	end of doc-ready()
 </script>
 </html>
 
