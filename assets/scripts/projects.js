@@ -3,7 +3,7 @@ var projects = {
 	starwars: {
 		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript &nbsp;&middot;&nbsp; jQuery</p>',
 		emphases: 'EMPHASES <p class="normal">jQuery DOM Manipulation &nbsp;&middot;&nbsp; CSS Transitions &nbsp;&middot;&nbsp; Game/App Status Tracking &nbsp;&middot;&nbsp; JS Object Tracking</p>',
-		src: 'images/portfolio/starwars.PNG',
+		src: 'images/portfolio/starwars.png',
 		title: 'Star Wars <span>RPG</span>',
 		p1: 'Star Wars RPG<span>allows you to select 1 of 10 available characters. Out of the remaining characters, 3 are chosen randomly for you to combat. Your goal is to defeat all 3 and advance to the next round where 3 more opponents are randomly selected from those remaining.  Defeat all 9 enemies to win!</span>',
 		p2: '<span>Your attacks get stronger each time you attack, while the enemies attack you back for a random amount based upon their "Attack Power".</span>',
