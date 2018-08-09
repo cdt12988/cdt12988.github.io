@@ -1003,6 +1003,7 @@ figure.fade-in.hover:after {
 	animation: roll 0.75s;
 	transform: rotate(0deg);
 	opacity: .75;
+	overflow: auto;
 }
 #roll-out {
 	display: inline-block;
@@ -1165,6 +1166,10 @@ figure.fade-in.hover .link2 {
 		font-size: 1.5em;
 		margin-top: 3em;
 	}
+	.home-content-container .button {
+		font-size: 0.8em;
+		width: 110px;
+	}
 	.home-content {
 		width: auto;
 		padding: 0 0.5em;
@@ -1177,8 +1182,27 @@ figure.fade-in.hover .link2 {
 		height: auto;
 		overflow: auto;
 	}
+	.portfolio-content {
+		font-size: 1.58em;
+	}
+	.portfolio-content:before,
+	.portfolio-content:after {
+		display: none;
+	}
+	.more-btn {
+		display: none;
+	}
+	.app-links {
+		display: block;
+	}
+	.btn-menu-open {
+		left: 0;
+	}
 }
 
+.app-links {
+	display: none;
+}
 .js-hidden {
 	display: none !important;
 }
@@ -1224,7 +1248,7 @@ figure.fade-in.hover .link2 {
 			<div class="about-content">
 <!-- 				Hi there! My name is Cody Thompson and I am a full stack web developer based out of Fort Worth, Texas.  I love to code and have a passion for creating and discovering solutions to suit the particular needs of a given problem.  -->
 					<p>Hi there! My name is Cody Thompson and I am a full stack web developer based out of Fort Worth, Texas.  I love to code and have a passion for creating and discovering solutions to whatever problems come my way.</p>
-					<p>When not coding, I'm most likely spending time with my wife, our two dogs, and our newborn son, James!  If you'd like to learn more, give me a follow on <a class="link" href="#">linked in</a>, check out my <a class="link" href="#">resume</a>, or just <a class="link" href="#">send me a message!</a></p>
+					<p>When not coding, I'm most likely spending time with my wife, our two dogs, and our newborn son, James!  If you'd like to learn more, give me a follow on <a class="link" href="http://www.linkedin.com/in/cody-thompson-ab1352165" target="_blank">linked in</a>, check out my <a class="link" href="#">resume</a>, or just <a class="link" href="#">send me a message!</a></p>
 			</div>
 		</div>
 	</section>
@@ -1255,6 +1279,10 @@ figure.fade-in.hover .link2 {
 							<h3><span>Star Wars</span> RPG</h3>
 							<p>HTML5 &middot; CSS3 &middot; JavaScript &middot; jQuery</p>
 							<br>
+<!--
+							<a class="app-links" href="#">App</a>
+							<a class="app-links" href="#">GitHub</a>
+-->
 						</figcaption>
 
 						<div class="more-container" href="https://cdt12988.github.io/unit-4-game/" target="_blank">
