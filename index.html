@@ -638,6 +638,7 @@ button:active:before {
 }
 .portfolio-container {
 	width: 70%;
+	width: 80%;
 	margin: 5% auto;
 	text-align: center;
 }
@@ -1609,8 +1610,10 @@ $(document).ready(function(){
 				$('[data-figure="' + i + '"]').removeClass('js-hidden');
 				$('[data-figure="' + i + '"]').addClass('initials-slide');
 // 				$('[data-figure="' + i + '"]').removeClass('initials-slide');
+				$('#roll-out').addClass('js-hidden');
 			}
 		}, 550);
+		
 //		setTimeout(function() {
 //			$('.selector-bar').removeClass('js-hidden');
 //		}, 750);
