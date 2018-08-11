@@ -52,7 +52,7 @@ var projects = {
 	},
 	myJourney: {
 		src: 'images/portfolio/journey.jpg',
-		title: '<span>My</span> Journal',
+		title: '<span>My</span> Journey',
 		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JS/jQuery &nbsp;&middot;&nbsp; Firebase &nbsp;&middot;&nbsp; JSON API &nbsp;&middot;&nbsp; Moment.JS &nbsp;&middot;&nbsp; Bootstrap</p>',
 		emphases: 'EMPHASES <p class="normal">Firebase User Authentication &nbsp;&middot;&nbsp; Firebase Data Storage &nbsp;&middot;&nbsp; Daily User Logs &nbsp;&middot;&nbsp; Ajax API Calls (JSON Formatting) &nbsp;&middot;&nbsp; User Input Validations</p>',
 		p1: 'My Journey<span> is a fitness app designed to track daily nutrition intake. It uses Firebase User Authentication to create and track user accounts, allowing the app to be fully capable of supporting hundreds of new users, each tracking their own daily nutrition.  All user data is stored within the Firebase real time database for instant updates.</span>',
