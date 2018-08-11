@@ -11,7 +11,7 @@ var projects = {
 		gitHub: 'https://github.com/cdt12988/unit-4-game/'
 	},
 	gifTV: {
-		src: 'images/portfolio/gifTV.png',
+		src: 'images/portfolio/giftv.PNG',
 		title: 'gif<span>&middot;TV</span>',
 		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript &nbsp;&middot;&nbsp; jQuery &nbsp;&middot;&nbsp; GIPHY API</p>',
 		emphases: 'EMPHASES <p class="normal">User-Customized Ajax API Calls (JSON Formatting) &nbsp;&middot;&nbsp; Local Storage Data Persistence &nbsp;&middot;&nbsp; Advanced CSS/jQuery Displays &nbsp;&middot;&nbsp; JS Object Tracking &nbsp;&middot;&nbsp; Multiple Features</p>',
@@ -21,7 +21,7 @@ var projects = {
 		gitHub: 'https://github.com/cdt12988/gifTV/'
 	},
 	hangman: {
-		src: 'images/portfolio/gifTV.png',
+		src: 'images/portfolio/hangman.PNG',
 		title: '<span>Hang</span>man',
 		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript</p>',
 		emphases: 'EMPHASES <p class="normal">Manipulating the DOM via vanilla JavaScript &nbsp;&middot;&nbsp; HTML Canvas &nbsp:&middot;&nbsp; Handling user event listeners &nbsp;&middot;&nbsp; Game Logic with user customizations</p>',
