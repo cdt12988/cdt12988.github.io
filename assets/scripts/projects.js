@@ -69,6 +69,16 @@ var projects = {
 		p2: '<span>The game tracks levels and increases in difficulty as the game progresses.  It also has various powerups to help the player along their way.  It comes complete with a start menu and a gameover menu.  The game can be paused at any point, completely stopping all action until unpaused.  There is also a built-in high score menu (though the data is not persistent, due to the nature of Scratch).  While not a traditional language, I felt this fun little game demonstrated complex enough logic to warrant a spot on my portfolio page!</span>',
 		appLink: 'https://scratch.mit.edu/projects/227415079/',
 		gitHub: 'N/A'
+	},
+	liri: {
+		src: 'images/portfolio/liri.jpg',
+		title: '<span>LIRI</span> CLI',
+		languages: 'LANGUAGES <p class="normal">Node.js &nbsp;&middot;&nbsp; Moment.js &nbsp;&middot;&nbsp; Inquirer &nbsp;&middot;&nbsp; Request &nbsp;&middot;&nbsp; Node-Spotify-API &nbsp;&middot;&nbsp; DotENV</p>',
+		emphases: 'EMPHASES <p class="normal">Using Node.js and NPM Packages to make API calls/requests &nbsp;&middot;&nbsp; Receiving User Inputs via Command Line &nbsp;&middot;&nbsp; Logging Backend Data via file writing and manipulation &nbsp;&middot;&nbsp; Managing Node.js JSON Packages</p>',
+		p1: 'LIRI<span> is a Command Line Interface (CLI) app which receives user input in multiple ways in order to return desired information back to the user, such as song information, upcoming band/artist concerts, or movie information.  Each command is written into a separate file that logs all user commands, giving the user the additional option of selecting one of these previous commands at random.</span>',
+		p2: '<span>The app accomplishes this by using a variety of NPM packages, including Inquirer for user prompts, Dotenv to exclude local files from the github repository, File-System for reading, writing and updating files, Moment for date manipulation and formatting, Spotify-Node-API for song API calls, and Request for URL-based API calls (the OMDB and BandsInTown APIs).</span>',
+		appLink: 'N/A',
+		gitHub: 'https://github.com/cdt12988/liri-node-app'
 	}
 };
 

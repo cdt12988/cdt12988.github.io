@@ -436,7 +436,7 @@ button:active:before {
 	top: 0;
 	right: 0;
 	margin: 1em 0;
-	z-index: 2;
+	z-index: 20;
 	cursor: pointer;
 
 	transition: all 200ms linear;
@@ -469,7 +469,7 @@ button:active:before {
 	background-image: linear-gradient(to right bottom, rgba(178, 34, 34, 0.65), rgba(167, 35, 35, 0.65), rgba(156, 36, 36, 0.65), rgba(146, 37, 37, 0.65), rgba(135, 37, 37, 0.65));
 
 	transition: all 200ms linear;
-	z-index: 1;
+	z-index: 10;
 	overflow: auto;
 }
 .menu-open {
@@ -1249,7 +1249,7 @@ figure.fade-in.hover .link2 {
 			<div class="about-content">
 <!-- 				Hi there! My name is Cody Thompson and I am a full stack web developer based out of Fort Worth, Texas.  I love to code and have a passion for creating and discovering solutions to suit the particular needs of a given problem.  -->
 					<p>Hi there! My name is Cody Thompson and I am a full stack web developer based out of Fort Worth, Texas.  I love to code and have a passion for creating and discovering solutions to whatever problems come my way.</p>
-					<p>When not coding, I'm most likely spending time with my wife, our two dogs, and our newborn son, James!  If you'd like to learn more, give me a follow on <a class="link" href="http://www.linkedin.com/in/cody-thompson-ab1352165" target="_blank">linked in</a>, check out my <a class="link" href="#">resume</a>, or just <a class="link" href="#">send me a message!</a></p>
+					<p>When not coding, I'm most likely spending time with my wife, our two dogs, and our newborn son, James!  If you'd like to learn more, give me a follow on <a class="link" href="http://www.linkedin.com/in/cody-thompson-ab1352165" target="_blank">linked in</a>, check out my <a class="link" href="https://cdt12988.github.io/resume" target="_blank">resume</a>, or just <a class="link" href="#">send me a message!</a></p>
 			</div>
 		</div>
 	</section>
@@ -1367,6 +1367,19 @@ figure.fade-in.hover .link2 {
 						<div class="more-container" href="https://scratch.mit.edu/projects/227415079/" target="_blank">
 							<a class="background-link" href="https://scratch.mit.edu/projects/227415079/" target="_blank"></a>
 							<a class="more-btn" data-figure="6" href="#portfolio" data-name="mousehunters">Learn More</a>
+						</div>		
+					</figure>
+					<figure class="fade-in thumbnail" data-figure="7">
+						<img data-img="7" src="images/portfolio/liri.jpg" alt="LIRI CLI">
+						<figcaption>
+							<h3 class="lower-case"><span>LIRI</span> CLI</h3>
+							<p>Node.js &middot; NPM Packages &middot; API Requests</p>
+							<br>
+						</figcaption>
+
+						<div class="more-container" href="https://github.com/cdt12988/liri-node-app/" target="_blank">
+							<a class="background-link" href="https://github.com/cdt12988/liri-node-app/" target="_blank"></a>
+							<a class="more-btn" data-figure="7" href="#portfolio" data-name="liri">Learn More</a>
 						</div>		
 					</figure>
 				</div>
@@ -1582,10 +1595,12 @@ $(document).ready(function(){
 			'class': 'close-btn'
 		});
 		
-		if(name != 'mousehunters') {
+		if(name != 'mousehunters' && name != 'liri') {
 			newContentWrap.append(languages, emphasis, description, logic, app, git);
-		} else {
+		} else if(name == 'mousehunters') {
 			newContentWrap.append(languages, emphasis, description, logic, app)
+		} else {
+			newContentWrap.append(languages, emphasis, description, logic, git);
 		}
 //		newContentWrap.append(languages, emphasis, description, logic, break1, break2);
 
@@ -1631,7 +1646,7 @@ $(document).ready(function(){
 	$('#front-end').click(function() {
 		var thumbnails = document.getElementsByClassName('thumbnail');
 		for(var i=0; i < thumbnails.length; i++) {
-			if(i == 6 || i == 5) {
+			if(i == 7 || i == 6 || i == 5) {
 				$('[data-figure="' + i + '"]').addClass('js-hidden');
 // 				$('[data-figure="' + i + '"]').removeClass('initials-slide');
 			} else {
@@ -1645,7 +1660,7 @@ $(document).ready(function(){
 	$('#back-end').click(function() {
 		var thumbnails = document.getElementsByClassName('thumbnail');
 		for(var i=0; i < thumbnails.length; i++) {
-			if(i == 3 || i ==5) {
+			if(i == 3 || i == 5 || i == 7) {
 				$('[data-figure="' + i + '"]').removeClass('js-hidden');
 // 				$('[data-figure="' + i + '"]').addClass('initials-slide');
 			} else {
