@@ -79,6 +79,16 @@ var projects = {
 		p2: '<span>The app accomplishes this by using a variety of NPM packages, including Inquirer for user prompts, Dotenv to exclude local files from the github repository, File-System for reading, writing and updating files, Moment for date manipulation and formatting, Spotify-Node-API for song API calls, and Request for URL-based API calls (the OMDB and BandsInTown APIs).</span>',
 		appLink: 'N/A',
 		gitHub: 'https://github.com/cdt12988/liri-node-app'
+	},
+	liri: {
+		src: 'images/portfolio/hangmanCLI.jpg',
+		title: '<span>Hangman</span> CLI',
+		languages: 'LANGUAGES <p class="normal">Node.js &nbsp;&middot;&nbsp; Inquirer NPM</p>',
+		emphases: 'EMPHASES <p class="normal">Using JS Object Constructors and a modular approach to build a fully functioning app.  Also uses a built-in custom Interface Display for Command Line.</p>',
+		p1: 'Hangman<span> is a Command Line Interface (CLI) game which allows the user to play the classic game of Hangman within their console.  The app has a built-in custom Interface Display allowing the player to easily visualize the state of the game and play in a more natural way than other CLI games.</span>',
+		p2: '<span>The app uses the Inquirer NPM package to prompt users for their input letters and is completely modular with individual pieces of the game separated and imported to other files as needed.</span>',
+		appLink: 'N/A',
+		gitHub: 'https://github.com/cdt12988/Word-Guess-CLi'
 	}
 };
 

@@ -1382,6 +1382,19 @@ figure.fade-in.hover .link2 {
 							<a class="more-btn" data-figure="7" href="#portfolio" data-name="liri">Learn More</a>
 						</div>		
 					</figure>
+					<figure class="fade-in thumbnail" data-figure="8">
+						<img data-img="8" src="images/portfolio/hangmanCLI.jpg" alt="LIRI CLI">
+						<figcaption>
+							<h3 class="lower-case"><span>Hangman</span> CLI</h3>
+							<p>Node.js &middot; NPM Packages &middot; Object Constructors</p>
+							<br>
+						</figcaption>
+
+						<div class="more-container" href="https://github.com/cdt12988/Word-Guess-CLi/" target="_blank">
+							<a class="background-link" href="https://github.com/cdt12988/Word-Guess-Cli/" target="_blank"></a>
+							<a class="more-btn" data-figure="8" href="#portfolio" data-name="hangmanCLI">Learn More</a>
+						</div>		
+					</figure>
 				</div>
 			</div>
 
@@ -1595,7 +1608,7 @@ $(document).ready(function(){
 			'class': 'close-btn'
 		});
 		
-		if(name != 'mousehunters' && name != 'liri') {
+		if(name != 'mousehunters' && name != 'liri' && name != 'hangmanCLI') {
 			newContentWrap.append(languages, emphasis, description, logic, app, git);
 		} else if(name == 'mousehunters') {
 			newContentWrap.append(languages, emphasis, description, logic, app)
@@ -1646,7 +1659,7 @@ $(document).ready(function(){
 	$('#front-end').click(function() {
 		var thumbnails = document.getElementsByClassName('thumbnail');
 		for(var i=0; i < thumbnails.length; i++) {
-			if(i == 7 || i == 6 || i == 5) {
+			if(i == 8 || i == 7 || i == 6 || i == 5) {
 				$('[data-figure="' + i + '"]').addClass('js-hidden');
 // 				$('[data-figure="' + i + '"]').removeClass('initials-slide');
 			} else {
@@ -1660,7 +1673,7 @@ $(document).ready(function(){
 	$('#back-end').click(function() {
 		var thumbnails = document.getElementsByClassName('thumbnail');
 		for(var i=0; i < thumbnails.length; i++) {
-			if(i == 3 || i == 5 || i == 7) {
+			if(i == 3 || i == 5 || i == 7 || i == 8) {
 				$('[data-figure="' + i + '"]').removeClass('js-hidden');
 // 				$('[data-figure="' + i + '"]').addClass('initials-slide');
 			} else {
