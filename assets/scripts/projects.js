@@ -80,7 +80,7 @@ var projects = {
 		appLink: 'N/A',
 		gitHub: 'https://github.com/cdt12988/liri-node-app'
 	},
-	liri: {
+	hangmanCLI: {
 		src: 'images/portfolio/hangmanCLI.jpg',
 		title: '<span>Hangman</span> CLI',
 		languages: 'LANGUAGES <p class="normal">Node.js &nbsp;&middot;&nbsp; Inquirer NPM</p>',
