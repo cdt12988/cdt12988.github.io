@@ -88,7 +88,7 @@ var projects = {
 		p1: 'Hangman<span> is a Command Line Interface (CLI) game which allows the user to play the classic game of Hangman within their console.  The app has a built-in custom Interface Display allowing the player to easily visualize the state of the game and play in a more natural way than other CLI games.</span>',
 		p2: '<span>The app uses the Inquirer NPM package to prompt users for their input letters and is completely modular with individual pieces of the game separated and imported to other files as needed.</span>',
 		appLink: 'N/A',
-		gitHub: 'https://github.com/cdt12988/Word-Guess-CLi'
+		gitHub: 'https://github.com/cdt12988/node-word-guess-game'
 	}
 };
 
