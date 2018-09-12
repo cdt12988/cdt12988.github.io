@@ -763,6 +763,9 @@ figure.slide-out h3 {
 	font-size: 1em;
 //	border-bottom: 2px solid rgba(255, 255, 255, 0.8);
 }
+#dmi {
+	font-size: 0.8em;
+}
 figure.slide-out a {
 	position: absolute;
 	left: 0;
@@ -1395,6 +1398,19 @@ figure.fade-in.hover .link2 {
 							<a class="more-btn" data-figure="8" href="#portfolio" data-name="hangmanCLI">Learn More</a>
 						</div>		
 					</figure>
+					<figure class="fade-in thumbnail" data-figure="9">
+						<img data-img="9" src="images/portfolio/dmi.jpg" alt="Dunder-Mifflin Infinity">
+						<figcaption>
+							<h3 class="lower-case" id="dmi"><span>Dunder-Mifflin</span> Infinity</h3>
+							<p>Node.js &middot; MySQL &middot; NPM Packages</p>
+							<br>
+						</figcaption>
+
+						<div class="more-container" href="https://github.com/cdt12988/dunder-mifflin-infinity/" target="_blank">
+							<a class="background-link" href="https://github.com/cdt12988/dunder-mifflin-infinity/" target="_blank"></a>
+							<a class="more-btn" data-figure="9" href="#portfolio" data-name="dmi">Learn More</a>
+						</div>		
+					</figure>
 				</div>
 			</div>
 
@@ -1608,7 +1624,7 @@ $(document).ready(function(){
 			'class': 'close-btn'
 		});
 		
-		if(name != 'mousehunters' && name != 'liri' && name != 'hangmanCLI') {
+		if(name != 'mousehunters' && name != 'liri' && name != 'hangmanCLI' && name != 'dmi') {
 			newContentWrap.append(languages, emphasis, description, logic, app, git);
 		} else if(name == 'mousehunters') {
 			newContentWrap.append(languages, emphasis, description, logic, app)
@@ -1659,7 +1675,7 @@ $(document).ready(function(){
 	$('#front-end').click(function() {
 		var thumbnails = document.getElementsByClassName('thumbnail');
 		for(var i=0; i < thumbnails.length; i++) {
-			if(i == 8 || i == 7 || i == 6 || i == 5) {
+			if(i == 9 || i == 8 || i == 7 || i == 6 || i == 5) {
 				$('[data-figure="' + i + '"]').addClass('js-hidden');
 // 				$('[data-figure="' + i + '"]').removeClass('initials-slide');
 			} else {
@@ -1673,7 +1689,7 @@ $(document).ready(function(){
 	$('#back-end').click(function() {
 		var thumbnails = document.getElementsByClassName('thumbnail');
 		for(var i=0; i < thumbnails.length; i++) {
-			if(i == 3 || i == 5 || i == 7 || i == 8) {
+			if(i == 3 || i == 5 || i == 7 || i == 8 || i == 9) {
 				$('[data-figure="' + i + '"]').removeClass('js-hidden');
 // 				$('[data-figure="' + i + '"]').addClass('initials-slide');
 			} else {

@@ -44,6 +44,10 @@ Game: [https://scratch.mit.edu/projects/227415079/](https://scratch.mit.edu/proj
 
 GitHub Link: [https://github.com/cdt12988/liri-node-app/](https://github.com/cdt12988/liri-node-app/ "LIRI CLI GitHub")
 
+## Dunder-Mifflin Infinity (Storefront App)
+
+GitHub Link: [https://github.com/cdt12988/dunder-mifflin-infinity](https://github.com/cdt12988/dunder-mifflin-infinity/ "Dunder-Mifflin GitHub")
+
 ## Widget Corp CMS
 
 GitHub Link: [https://github.com/cdt12988/widget_corp/](https://github.com/cdt12988/widget_corp/ "Widget Corp CMS")

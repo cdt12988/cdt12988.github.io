@@ -89,6 +89,16 @@ var projects = {
 		p2: '<span>The app uses the Inquirer NPM package to prompt users for their input letters and is completely modular with individual pieces of the game separated and imported to other files as needed.</span>',
 		appLink: 'N/A',
 		gitHub: 'https://github.com/cdt12988/node-word-guess-game'
+	},
+	dmi: {
+		src: 'images/portfolio/dmi.jpg',
+		title: '<span>Dunder-Mifflin</span> Infinity',
+		languages: 'LANGUAGES <p class="normal">Node.js &nbsp;&middot;&nbsp; MySQL &nbsp;&middot;&nbsp; Inquirer &nbsp;&middot;&nbsp; Moment.js &nbsp;&middot;&nbsp; Terminal-Table</p>',
+		emphases: 'EMPHASES <p class="normal">MySQL database queries using Node.js &nbsp;&middot;&nbsp; Custom-Made User Authentication System  &nbsp;&middot;&nbsp; User Permissions to access various content management areas &nbsp;&middot;&nbsp; Command Line user prompts using the Inquirer NPM Package</p>',
+		p1: 'Dunder-Mifflin Infinity<span> is a Command Line Interface (CLI) storefront application designed to allow customers to browse various products stored within Dunder-Mifflin\'s database.  Customers can create accounts to have their purchases logged to their account, or they can shop and checkout as a guest.</span>',
+		p2: '<span>Additionally, manager and system administrator users can be created to manage products, inventory, and users of the application.  System admins can also view simple financial reports to ensure the health and well-being of the company.<br><br>The app uses BCrypt to hash user passwords, Inquirer for user prompts, Terminal-Table for command line data displays, MySQL for database connections and queries, and Moment.js to keep track of dates and times.</span>',
+		appLink: 'N/A',
+		gitHub: 'https://github.com/cdt12988/dunder-mifflin-infinity'
 	}
 };
 
