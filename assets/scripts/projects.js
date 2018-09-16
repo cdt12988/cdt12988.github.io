@@ -99,6 +99,16 @@ var projects = {
 		p2: '<span>Additionally, manager and system administrator users can be created to manage products, inventory, and users of the application.  System admins can also view simple financial reports to ensure the health and well-being of the company.<br><br>The app uses BCrypt to hash user passwords, Inquirer for user prompts, Terminal-Table for command line data displays, MySQL for database connections and queries, and Moment.js to keep track of dates and times.</span>',
 		appLink: 'N/A',
 		gitHub: 'https://github.com/cdt12988/dunder-mifflin-infinity'
+	},
+	faf: {
+		src: 'images/portfolio/faf.jpg',
+		title: 'Find a <span>Friend</span>',
+		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript/jQuery &nbsp;&middot;&nbsp; Node.js &nbsp;&middot;&nbsp; Express.js</p>',
+		emphases: 'EMPHASES <p class="normal">Full-stack application &nbsp;&middot;&nbsp; Custom server &nbsp;&middot;&nbsp; RESTFUL AJAX requests and responses &nbsp;&middot;&nbsp; Front-end access to API data</p>',
+		p1: 'Find a Frined<span> is a full-stack application that allows users to fill out a quick questionnaire and match with like-minded individuals based upon their answers to the questions.</span>',
+		p2: '<span>The application sends RESTful AJAX requests to the server.  The server, written with Express, processes these requests and sends appropriate responses back to the client, either HTML files or JSON objects.</span>',
+		appLink: 'https://floating-journey-91870.herokuapp.com/',
+		gitHub: 'https://github.com/cdt12988/FriendFinder'
 	}
 };
 
