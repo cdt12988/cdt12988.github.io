@@ -72,7 +72,7 @@ var projects = {
 	},
 	liri: {
 		src: 'images/portfolio/liri.jpg',
-		title: '<span>LIRI</span> CLI',
+		title: 'LIRI<span> CLI</span>',
 		languages: 'LANGUAGES <p class="normal">Node.js &nbsp;&middot;&nbsp; Moment.js &nbsp;&middot;&nbsp; Inquirer &nbsp;&middot;&nbsp; Request &nbsp;&middot;&nbsp; Node-Spotify-API &nbsp;&middot;&nbsp; DotENV</p>',
 		emphases: 'EMPHASES <p class="normal">Using Node.js and NPM Packages to make API calls/requests &nbsp;&middot;&nbsp; Receiving User Inputs via Command Line &nbsp;&middot;&nbsp; Logging Backend Data via file writing and manipulation &nbsp;&middot;&nbsp; Managing Node.js JSON Packages</p>',
 		p1: 'LIRI<span> is a Command Line Interface (CLI) app which receives user input in multiple ways in order to return desired information back to the user, such as song information, upcoming band/artist concerts, or movie information.  Each command is written into a separate file that logs all user commands, giving the user the additional option of selecting one of these previous commands at random.</span>',
@@ -82,7 +82,7 @@ var projects = {
 	},
 	hangmanCLI: {
 		src: 'images/portfolio/hangmanCLI.jpg',
-		title: '<span>Hangman</span> CLI',
+		title: 'Hangman<span> CLI</span>',
 		languages: 'LANGUAGES <p class="normal">Node.js &nbsp;&middot;&nbsp; Inquirer NPM</p>',
 		emphases: 'EMPHASES <p class="normal">Using JS Object Constructors and a modular approach to build a fully functioning app.  Also uses a built-in custom Interface Display for Command Line.</p>',
 		p1: 'Hangman<span> is a Command Line Interface (CLI) game which allows the user to play the classic game of Hangman within their console.  The app has a built-in custom Interface Display allowing the player to easily visualize the state of the game and play in a more natural way than other CLI games.</span>',
@@ -92,7 +92,7 @@ var projects = {
 	},
 	dmi: {
 		src: 'images/portfolio/dmi.jpg',
-		title: '<span>Dunder-Mifflin</span> Infinity',
+		title: 'Dunder-Mifflin<span> Infinity</span>',
 		languages: 'LANGUAGES <p class="normal">Node.js &nbsp;&middot;&nbsp; MySQL &nbsp;&middot;&nbsp; Inquirer &nbsp;&middot;&nbsp; Moment.js &nbsp;&middot;&nbsp; Terminal-Table</p>',
 		emphases: 'EMPHASES <p class="normal">MySQL database queries using Node.js &nbsp;&middot;&nbsp; Custom-Made User Authentication System  &nbsp;&middot;&nbsp; User Permissions to access various content management areas &nbsp;&middot;&nbsp; Command Line user prompts using the Inquirer NPM Package</p>',
 		p1: 'Dunder-Mifflin Infinity<span> is a Command Line Interface (CLI) storefront application designed to allow customers to browse various products stored within Dunder-Mifflin\'s database.  Customers can create accounts to have their purchases logged to their account, or they can shop and checkout as a guest.</span>',
@@ -102,7 +102,7 @@ var projects = {
 	},
 	faf: {
 		src: 'images/portfolio/faf.jpg',
-		title: 'Find a <span>Friend</span>',
+		title: '<span>Find a </span>Friend',
 		languages: 'LANGUAGES <p class="normal">HTML5 &nbsp;&middot;&nbsp; CSS3 &nbsp;&middot;&nbsp; JavaScript/jQuery &nbsp;&middot;&nbsp; Node.js &nbsp;&middot;&nbsp; Express.js</p>',
 		emphases: 'EMPHASES <p class="normal">Full-stack application &nbsp;&middot;&nbsp; Custom server &nbsp;&middot;&nbsp; RESTFUL AJAX requests and responses &nbsp;&middot;&nbsp; Front-end access to API data</p>',
 		p1: 'Find a Frined<span> is a full-stack application that allows users to fill out a quick questionnaire and match with like-minded individuals based upon their answers to the questions.</span>',
